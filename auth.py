@@ -17,7 +17,8 @@ def register():
         return
 
     else:  
-        data_akun[username_baru] = [password_baru]
+        data_akun[username_baru] = {"password": password_baru}
+        print(data_akun)
         print("\nRegistrasi berhasil! Silakan login.")
 
     finally:
